@@ -1,0 +1,407 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@ic-name: 'ic';
+@ic-x: 229px;
+@ic-y: 544px;
+@ic-offset-x: -229px;
+@ic-offset-y: -544px;
+@ic-width: 477px;
+@ic-height: 22px;
+@ic-total-width: 770px;
+@ic-total-height: 697px;
+@ic-image: '../../../build/img/sprite.png';
+@ic: 229px 544px -229px -544px 477px 22px 770px 697px '../../../build/img/sprite.png' 'ic';
+@icon-account-name: 'icon-account';
+@icon-account-x: 674px;
+@icon-account-y: 444px;
+@icon-account-offset-x: -674px;
+@icon-account-offset-y: -444px;
+@icon-account-width: 40px;
+@icon-account-height: 38px;
+@icon-account-total-width: 770px;
+@icon-account-total-height: 697px;
+@icon-account-image: '../../../build/img/sprite.png';
+@icon-account: 674px 444px -674px -444px 40px 38px 770px 697px '../../../build/img/sprite.png' 'icon-account';
+@icon-bag-name: 'icon-bag';
+@icon-bag-x: 547px;
+@icon-bag-y: 444px;
+@icon-bag-offset-x: -547px;
+@icon-bag-offset-y: -444px;
+@icon-bag-width: 51px;
+@icon-bag-height: 49px;
+@icon-bag-total-width: 770px;
+@icon-bag-total-height: 697px;
+@icon-bag-image: '../../../build/img/sprite.png';
+@icon-bag: 547px 444px -547px -444px 51px 49px 770px 697px '../../../build/img/sprite.png' 'icon-bag';
+@icon-facebook-footer-name: 'icon-facebook-footer';
+@icon-facebook-footer-x: 454px;
+@icon-facebook-footer-y: 608px;
+@icon-facebook-footer-offset-x: -454px;
+@icon-facebook-footer-offset-y: -608px;
+@icon-facebook-footer-width: 35px;
+@icon-facebook-footer-height: 34px;
+@icon-facebook-footer-total-width: 770px;
+@icon-facebook-footer-total-height: 697px;
+@icon-facebook-footer-image: '../../../build/img/sprite.png';
+@icon-facebook-footer: 454px 608px -454px -608px 35px 34px 770px 697px '../../../build/img/sprite.png' 'icon-facebook-footer';
+@icon-facebook-name: 'icon-facebook';
+@icon-facebook-x: 0px;
+@icon-facebook-y: 667px;
+@icon-facebook-offset-x: 0px;
+@icon-facebook-offset-y: -667px;
+@icon-facebook-width: 15px;
+@icon-facebook-height: 30px;
+@icon-facebook-total-width: 770px;
+@icon-facebook-total-height: 697px;
+@icon-facebook-image: '../../../build/img/sprite.png';
+@icon-facebook: 0px 667px 0px -667px 15px 30px 770px 697px '../../../build/img/sprite.png' 'icon-facebook';
+@icon-google-footer-name: 'icon-google-footer';
+@icon-google-footer-x: 364px;
+@icon-google-footer-y: 608px;
+@icon-google-footer-offset-x: -364px;
+@icon-google-footer-offset-y: -608px;
+@icon-google-footer-width: 35px;
+@icon-google-footer-height: 34px;
+@icon-google-footer-total-width: 770px;
+@icon-google-footer-total-height: 697px;
+@icon-google-footer-image: '../../../build/img/sprite.png';
+@icon-google-footer: 364px 608px -364px -608px 35px 34px 770px 697px '../../../build/img/sprite.png' 'icon-google-footer';
+@icon-pin-foter-name: 'icon-pin-foter';
+@icon-pin-foter-x: 319px;
+@icon-pin-foter-y: 608px;
+@icon-pin-foter-offset-x: -319px;
+@icon-pin-foter-offset-y: -608px;
+@icon-pin-foter-width: 35px;
+@icon-pin-foter-height: 34px;
+@icon-pin-foter-total-width: 770px;
+@icon-pin-foter-total-height: 697px;
+@icon-pin-foter-image: '../../../build/img/sprite.png';
+@icon-pin-foter: 319px 608px -319px -608px 35px 34px 770px 697px '../../../build/img/sprite.png' 'icon-pin-foter';
+@icon-pin-name: 'icon-pin';
+@icon-pin-x: 229px;
+@icon-pin-y: 608px;
+@icon-pin-offset-x: -229px;
+@icon-pin-offset-y: -608px;
+@icon-pin-width: 35px;
+@icon-pin-height: 35px;
+@icon-pin-total-width: 770px;
+@icon-pin-total-height: 697px;
+@icon-pin-image: '../../../build/img/sprite.png';
+@icon-pin: 229px 608px -229px -608px 35px 35px 770px 697px '../../../build/img/sprite.png' 'icon-pin';
+@icon-t-footer-name: 'icon-t-footer';
+@icon-t-footer-x: 274px;
+@icon-t-footer-y: 608px;
+@icon-t-footer-offset-x: -274px;
+@icon-t-footer-offset-y: -608px;
+@icon-t-footer-width: 35px;
+@icon-t-footer-height: 34px;
+@icon-t-footer-total-width: 770px;
+@icon-t-footer-total-height: 697px;
+@icon-t-footer-image: '../../../build/img/sprite.png';
+@icon-t-footer: 274px 608px -274px -608px 35px 34px 770px 697px '../../../build/img/sprite.png' 'icon-t-footer';
+@icon-twet-foter-name: 'icon-twet-foter';
+@icon-twet-foter-x: 409px;
+@icon-twet-foter-y: 608px;
+@icon-twet-foter-offset-x: -409px;
+@icon-twet-foter-offset-y: -608px;
+@icon-twet-foter-width: 35px;
+@icon-twet-foter-height: 34px;
+@icon-twet-foter-total-width: 770px;
+@icon-twet-foter-total-height: 697px;
+@icon-twet-foter-image: '../../../build/img/sprite.png';
+@icon-twet-foter: 409px 608px -409px -608px 35px 34px 770px 697px '../../../build/img/sprite.png' 'icon-twet-foter';
+@icon-twitter-name: 'icon-twitter';
+@icon-twitter-x: 428px;
+@icon-twitter-y: 315px;
+@icon-twitter-offset-x: -428px;
+@icon-twitter-offset-y: -315px;
+@icon-twitter-width: 33px;
+@icon-twitter-height: 28px;
+@icon-twitter-total-width: 770px;
+@icon-twitter-total-height: 697px;
+@icon-twitter-image: '../../../build/img/sprite.png';
+@icon-twitter: 428px 315px -428px -315px 33px 28px 770px 697px '../../../build/img/sprite.png' 'icon-twitter';
+@icon-v-footer-name: 'icon-v-footer';
+@icon-v-footer-x: 499px;
+@icon-v-footer-y: 608px;
+@icon-v-footer-offset-x: -499px;
+@icon-v-footer-offset-y: -608px;
+@icon-v-footer-width: 35px;
+@icon-v-footer-height: 34px;
+@icon-v-footer-total-width: 770px;
+@icon-v-footer-total-height: 697px;
+@icon-v-footer-image: '../../../build/img/sprite.png';
+@icon-v-footer: 499px 608px -499px -608px 35px 34px 770px 697px '../../../build/img/sprite.png' 'icon-v-footer';
+@icon-bag-black-name: 'icon_bag_black';
+@icon-bag-black-x: 0px;
+@icon-bag-black-y: 377px;
+@icon-bag-black-offset-x: 0px;
+@icon-bag-black-offset-y: -377px;
+@icon-bag-black-width: 219px;
+@icon-bag-black-height: 280px;
+@icon-bag-black-total-width: 770px;
+@icon-bag-black-total-height: 697px;
+@icon-bag-black-image: '../../../build/img/sprite.png';
+@icon-bag-black: 0px 377px 0px -377px 219px 280px 770px 697px '../../../build/img/sprite.png' 'icon_bag_black';
+@icon-basket-2-name: 'icon_basket_2';
+@icon-basket-2-x: 544px;
+@icon-basket-2-y: 608px;
+@icon-basket-2-offset-x: -544px;
+@icon-basket-2-offset-y: -608px;
+@icon-basket-2-width: 30px;
+@icon-basket-2-height: 29px;
+@icon-basket-2-total-width: 770px;
+@icon-basket-2-total-height: 697px;
+@icon-basket-2-image: '../../../build/img/sprite.png';
+@icon-basket-2: 544px 608px -544px -608px 30px 29px 770px 697px '../../../build/img/sprite.png' 'icon_basket_2';
+@icon-brand-abandon-name: 'icon_brand_abandon';
+@icon-brand-abandon-x: 547px;
+@icon-brand-abandon-y: 377px;
+@icon-brand-abandon-offset-x: -547px;
+@icon-brand-abandon-offset-y: -377px;
+@icon-brand-abandon-width: 51px;
+@icon-brand-abandon-height: 57px;
+@icon-brand-abandon-total-width: 770px;
+@icon-brand-abandon-total-height: 697px;
+@icon-brand-abandon-image: '../../../build/img/sprite.png';
+@icon-brand-abandon: 547px 377px -547px -377px 51px 57px 770px 697px '../../../build/img/sprite.png' 'icon_brand_abandon';
+@icon-brand-addict-name: 'icon_brand_addict';
+@icon-brand-addict-x: 675px;
+@icon-brand-addict-y: 377px;
+@icon-brand-addict-offset-x: -675px;
+@icon-brand-addict-offset-y: -377px;
+@icon-brand-addict-width: 83px;
+@icon-brand-addict-height: 31px;
+@icon-brand-addict-total-width: 770px;
+@icon-brand-addict-total-height: 697px;
+@icon-brand-addict-image: '../../../build/img/sprite.png';
+@icon-brand-addict: 675px 377px -675px -377px 83px 31px 770px 697px '../../../build/img/sprite.png' 'icon_brand_addict';
+@icon-brand-adidas-name: 'icon_brand_adidas';
+@icon-brand-adidas-x: 608px;
+@icon-brand-adidas-y: 377px;
+@icon-brand-adidas-offset-x: -608px;
+@icon-brand-adidas-offset-y: -377px;
+@icon-brand-adidas-width: 57px;
+@icon-brand-adidas-height: 47px;
+@icon-brand-adidas-total-width: 770px;
+@icon-brand-adidas-total-height: 697px;
+@icon-brand-adidas-image: '../../../build/img/sprite.png';
+@icon-brand-adidas: 608px 377px -608px -377px 57px 47px 770px 697px '../../../build/img/sprite.png' 'icon_brand_adidas';
+@icon-brand-boy-name: 'icon_brand_boy';
+@icon-brand-boy-x: 608px;
+@icon-brand-boy-y: 444px;
+@icon-brand-boy-offset-x: -608px;
+@icon-brand-boy-offset-y: -444px;
+@icon-brand-boy-width: 56px;
+@icon-brand-boy-height: 38px;
+@icon-brand-boy-total-width: 770px;
+@icon-brand-boy-total-height: 697px;
+@icon-brand-boy-image: '../../../build/img/sprite.png';
+@icon-brand-boy: 608px 444px -608px -444px 56px 38px 770px 697px '../../../build/img/sprite.png' 'icon_brand_boy';
+@icon-brand-converce-name: 'icon_brand_converce';
+@icon-brand-converce-x: 541px;
+@icon-brand-converce-y: 348px;
+@icon-brand-converce-offset-x: -541px;
+@icon-brand-converce-offset-y: -348px;
+@icon-brand-converce-width: 84px;
+@icon-brand-converce-height: 16px;
+@icon-brand-converce-total-width: 770px;
+@icon-brand-converce-total-height: 697px;
+@icon-brand-converce-image: '../../../build/img/sprite.png';
+@icon-brand-converce: 541px 348px -541px -348px 84px 16px 770px 697px '../../../build/img/sprite.png' 'icon_brand_converce';
+@icon-brand-edwin-name: 'icon_brand_edwin';
+@icon-brand-edwin-x: 688px;
+@icon-brand-edwin-y: 311px;
+@icon-brand-edwin-offset-x: -688px;
+@icon-brand-edwin-offset-y: -311px;
+@icon-brand-edwin-width: 69px;
+@icon-brand-edwin-height: 22px;
+@icon-brand-edwin-total-width: 770px;
+@icon-brand-edwin-total-height: 697px;
+@icon-brand-edwin-image: '../../../build/img/sprite.png';
+@icon-brand-edwin: 688px 311px -688px -311px 69px 22px 770px 697px '../../../build/img/sprite.png' 'icon_brand_edwin';
+@icon-brand-grenson-name: 'icon_brand_grenson';
+@icon-brand-grenson-x: 541px;
+@icon-brand-grenson-y: 311px;
+@icon-brand-grenson-offset-x: -541px;
+@icon-brand-grenson-offset-y: -311px;
+@icon-brand-grenson-width: 137px;
+@icon-brand-grenson-height: 27px;
+@icon-brand-grenson-total-width: 770px;
+@icon-brand-grenson-total-height: 697px;
+@icon-brand-grenson-image: '../../../build/img/sprite.png';
+@icon-brand-grenson: 541px 311px -541px -311px 137px 27px 770px 697px '../../../build/img/sprite.png' 'icon_brand_grenson';
+@icon-dress-1-name: 'icon_dress_1';
+@icon-dress-1-x: 298px;
+@icon-dress-1-y: 0px;
+@icon-dress-1-offset-x: -298px;
+@icon-dress-1-offset-y: 0px;
+@icon-dress-1-width: 233px;
+@icon-dress-1-height: 305px;
+@icon-dress-1-total-width: 770px;
+@icon-dress-1-total-height: 697px;
+@icon-dress-1-image: '../../../build/img/sprite.png';
+@icon-dress-1: 298px 0px -298px 0px 233px 305px 770px 697px '../../../build/img/sprite.png' 'icon_dress_1';
+@icon-dress-2-name: 'icon_dress_2';
+@icon-dress-2-x: 0px;
+@icon-dress-2-y: 0px;
+@icon-dress-2-offset-x: 0px;
+@icon-dress-2-offset-y: 0px;
+@icon-dress-2-width: 288px;
+@icon-dress-2-height: 367px;
+@icon-dress-2-total-width: 770px;
+@icon-dress-2-total-height: 697px;
+@icon-dress-2-image: '../../../build/img/sprite.png';
+@icon-dress-2: 0px 0px 0px 0px 288px 367px 770px 697px '../../../build/img/sprite.png' 'icon_dress_2';
+@icon-dress-3-name: 'icon_dress_3';
+@icon-dress-3-x: 541px;
+@icon-dress-3-y: 0px;
+@icon-dress-3-offset-x: -541px;
+@icon-dress-3-offset-y: 0px;
+@icon-dress-3-width: 229px;
+@icon-dress-3-height: 301px;
+@icon-dress-3-total-width: 770px;
+@icon-dress-3-total-height: 697px;
+@icon-dress-3-image: '../../../build/img/sprite.png';
+@icon-dress-3: 541px 0px -541px 0px 229px 301px 770px 697px '../../../build/img/sprite.png' 'icon_dress_3';
+@icon-mini-pay-name: 'icon_mini_pay';
+@icon-mini-pay-x: 229px;
+@icon-mini-pay-y: 576px;
+@icon-mini-pay-offset-x: -229px;
+@icon-mini-pay-offset-y: -576px;
+@icon-mini-pay-width: 477px;
+@icon-mini-pay-height: 22px;
+@icon-mini-pay-total-width: 770px;
+@icon-mini-pay-total-height: 697px;
+@icon-mini-pay-image: '../../../build/img/sprite.png';
+@icon-mini-pay: 229px 576px -229px -576px 477px 22px 770px 697px '../../../build/img/sprite.png' 'icon_mini_pay';
+@icon-sarch-name: 'icon_sarch';
+@icon-sarch-x: 724px;
+@icon-sarch-y: 444px;
+@icon-sarch-offset-x: -724px;
+@icon-sarch-offset-y: -444px;
+@icon-sarch-width: 38px;
+@icon-sarch-height: 38px;
+@icon-sarch-total-width: 770px;
+@icon-sarch-total-height: 697px;
+@icon-sarch-image: '../../../build/img/sprite.png';
+@icon-sarch: 724px 444px -724px -444px 38px 38px 770px 697px '../../../build/img/sprite.png' 'icon_sarch';
+@logo-name: 'logo';
+@logo-x: 298px;
+@logo-y: 315px;
+@logo-offset-x: -298px;
+@logo-offset-y: -315px;
+@logo-width: 120px;
+@logo-height: 28px;
+@logo-total-width: 770px;
+@logo-total-height: 697px;
+@logo-image: '../../../build/img/sprite.png';
+@logo: 298px 315px -298px -315px 120px 28px 770px 697px '../../../build/img/sprite.png' 'logo';
+@round-price-1-name: 'round_price_1';
+@round-price-1-x: 396px;
+@round-price-1-y: 377px;
+@round-price-1-offset-x: -396px;
+@round-price-1-offset-y: -377px;
+@round-price-1-width: 141px;
+@round-price-1-height: 141px;
+@round-price-1-total-width: 770px;
+@round-price-1-total-height: 697px;
+@round-price-1-image: '../../../build/img/sprite.png';
+@round-price-1: 396px 377px -396px -377px 141px 141px 770px 697px '../../../build/img/sprite.png' 'round_price_1';
+@round-price-2-name: 'round_price_2';
+@round-price-2-x: 229px;
+@round-price-2-y: 377px;
+@round-price-2-offset-x: -229px;
+@round-price-2-offset-y: -377px;
+@round-price-2-width: 157px;
+@round-price-2-height: 157px;
+@round-price-2-total-width: 770px;
+@round-price-2-total-height: 697px;
+@round-price-2-image: '../../../build/img/sprite.png';
+@round-price-2: 229px 377px -229px -377px 157px 157px 770px 697px '../../../build/img/sprite.png' 'round_price_2';
+@spritesheet-width: 770px;
+@spritesheet-height: 697px;
+@spritesheet-image: '../../../build/img/sprite.png';
+@spritesheet-sprites: @ic @icon-account @icon-bag @icon-facebook-footer @icon-facebook @icon-google-footer @icon-pin-foter @icon-pin @icon-t-footer @icon-twet-foter @icon-twitter @icon-v-footer @icon-bag-black @icon-basket-2 @icon-brand-abandon @icon-brand-addict @icon-brand-adidas @icon-brand-boy @icon-brand-converce @icon-brand-edwin @icon-brand-grenson @icon-dress-1 @icon-dress-2 @icon-dress-3 @icon-mini-pay @icon-sarch @logo @round-price-1 @round-price-2;
+@spritesheet: 770px 697px '../../../build/img/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

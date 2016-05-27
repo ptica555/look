@@ -1,0 +1,25 @@
+@import 'imports/_mixins';
+@import 'imports/sprite';
+.icon-account{
+	.sprite(@icon-account);
+	@media screen and (min-width: 768px){
+		.sprite(@icon-account);
+	}
+}
+.row{
+	&:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+.col{
+	float: left;
+}
+.grid-univers(xs, 2);
+@media screen and (min-width:780px){
+	.grid-univers(m,9);
+}
+@media scrreen and (min-width: 970px){
+	.grid-univers(l,12);
+}
